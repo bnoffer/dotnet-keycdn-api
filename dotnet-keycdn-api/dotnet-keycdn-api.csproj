@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Com.KeyCDN.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Polly" />
+    <None Remove="Refit" />
+    <None Remove="Abstraction\" />
+    <None Remove="Logging\" />
+    <None Remove="Models\" />
+    <None Remove="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="Refit" Version="6.2.16" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstraction\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Schemas\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+</Project>
